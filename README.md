@@ -1,39 +1,36 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# ai_typing
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+This Flutter package simulates AI typing effects for your Text widgets. With simple integration, you can enhance the user experience by adding dynamic typing animations to your app.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+<img src="./screen-shot.gif" width="250" alt="Screnn-shot">
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+## Installation
 
-## Features
+Add the package to your pubspec.yaml:
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+```yaml
+dependencies:
+  ai_typing: ^0.0.1
+```
 
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Then run flutter pub get to install the package.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
 ```dart
-const like = 'sample';
+AiTypingText(
+    Text(
+        'Hello, World!\n\nThis is a package to simulate AI typing text.'
+    ),
+);
 ```
 
-## Additional information
+## Features
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+- Simulate AI typing animations.
+- Easy to integrate with any Text widget.
+- Customizable typing speed and delay.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
