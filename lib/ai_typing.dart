@@ -19,6 +19,7 @@ class AiTypingText extends StatefulWidget {
     this.interval = const Duration(milliseconds: 100),
     this.delay = Duration.zero,
     this.maxFluctuation = const Duration(milliseconds: 100),
+    this.enabled = true,
   });
 
   /// The text widget to display.
@@ -32,6 +33,9 @@ class AiTypingText extends StatefulWidget {
 
   /// The maximum fluctuation to apply to the interval.
   final Duration maxFluctuation;
+
+  /// Whether the typing effect is enabled.
+  final bool enabled;
 
   @override
   State<AiTypingText> createState() => _AiTypingState();
@@ -48,6 +52,10 @@ class _AiTypingState extends State<AiTypingText> {
   void initState() {
     super.initState();
     _fullText = widget.textWidget.data ?? '';
+
+    if (!widget.enabled) {
+      return;
+    }
 
     Future.delayed(widget.delay).then((_) {
       _startTyping();
@@ -82,7 +90,7 @@ class _AiTypingState extends State<AiTypingText> {
   @override
   Widget build(BuildContext context) {
     return Text(
-      _displayedText,
+      widget.enabled ? _displayedText : _fullText,
       style: widget.textWidget.style,
       strutStyle: widget.textWidget.strutStyle,
       textAlign: widget.textWidget.textAlign,

@@ -40,6 +40,10 @@ class MyHomePage extends StatelessWidget {
             AiTypingText(
               Text(
                   'Hello, World!\n\nThis is a package to simulate AI typing text.'),
+              interval: Duration(milliseconds: 100),
+              delay: Duration(milliseconds: 800),
+              maxFluctuation: Duration(milliseconds: 100),
+              enabled: true,
             ),
           ],
         ),
