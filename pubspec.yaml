@@ -1,6 +1,6 @@
 name: ai_typing
 description: "A package to simulate AI typing text."
-version: 0.0.2
+version: 0.1.0
 homepage: https://github.com/iktakahiro/flutter-ai-typing
 
 environment:
