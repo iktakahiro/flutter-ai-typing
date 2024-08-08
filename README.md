@@ -2,7 +2,7 @@
 
 This Flutter package simulates AI typing effects for your Text widgets. With simple integration, you can enhance the user experience by adding dynamic typing animations to your app.
 
-<img src="./screen-shot.gif" width="250" alt="Screnn-shot">
+<img src="https://github.com/iktakahiro/flutter-ai-typing/blob/main/screen-shot.gif?raw=true" width="250" alt="Screnn-shot">
 
 ## Installation
 
